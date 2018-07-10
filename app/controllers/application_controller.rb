@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     elsif
       redirect '/failure'
     else !user
-      redirect '/failure'
+      erb :failure
     end
 
   end
